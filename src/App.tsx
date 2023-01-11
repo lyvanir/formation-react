@@ -1,30 +1,20 @@
-//routes
-import {
-    BrowserRouter,
-    Routes,
-    Route
-} from "react-router-dom";
-//stylesheet
-import "./app.scss"
-// pages and sections
-import Header from "./sections/Header/Header";
-import Home from "./pages/Home/Home";
-import Search from "./pages/Search/Search";
-import Pokemon from "./pages/Pokemon/Pokemon";
+import reactLogo from './assets/react.svg'
+import './App.css'
 
-const App = () => (
-    <BrowserRouter>
-        <Header/>
-        <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/search" element={<Search/>}></Route>
-            <Route path="/pokemon/:pokemon" element={<Pokemon/>}></Route>
-            <Route
-                path="*"
-                element={<Home/>}
-            />
-        </Routes>
-    </BrowserRouter>
-)
+function App() {
+    return (
+        <div className="App">
+            <div>
+                <a href="https://reactjs.org" target="_blank">
+                    <img src={reactLogo} className="logo react" alt="React logo"/>
+                </a>
+            </div>
+            <h1>Vite + React</h1>
+            <p>
+                Bienvenue dans la formation
+            </p>
+        </div>
+    )
+}
 
-export default App;
+export default App
