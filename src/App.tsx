@@ -1,18 +1,14 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
+import PokemonCard from "./components/pokemon-card/PokemonCard";
 
 function App() {
     return (
         <div className="App">
+            <h1>Mes pokemons</h1>
             <div>
-                <a href="https://reactjs.org" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo"/>
-                </a>
+                <PokemonCard name={"TEST"} />
             </div>
-            <h1>Vite + React</h1>
-            <p>
-                Bienvenue dans la formation
-            </p>
         </div>
     )
 }
